@@ -1,0 +1,91 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Run",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0909090909090908,
+  "sample": 11,
+  "speed": 1.5,
+  "wrapMode": "2",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "31078e6b-1ded-4fb3-81ed-aa899b02669d"
+            }
+          },
+          {
+            "frame": 0.09090909090909091,
+            "value": {
+              "__uuid__": "d434af9f-7421-44cd-b073-2c67f6be7e60"
+            }
+          },
+          {
+            "frame": 0.18181818181818182,
+            "value": {
+              "__uuid__": "01cefb58-c7bc-4020-8677-eeff07c6fcc7"
+            }
+          },
+          {
+            "frame": 0.2727272727272727,
+            "value": {
+              "__uuid__": "98e062b6-3857-40d0-9162-1044a1d8ee88"
+            }
+          },
+          {
+            "frame": 0.36363636363636365,
+            "value": {
+              "__uuid__": "00b6b3b8-1fd9-4bc8-bb3a-aba046a03e9e"
+            }
+          },
+          {
+            "frame": 0.45454545454545453,
+            "value": {
+              "__uuid__": "613f0816-18e8-4113-a50f-ffabdc914536"
+            }
+          },
+          {
+            "frame": 0.5454545454545454,
+            "value": {
+              "__uuid__": "f1d5261c-042b-4adf-afc4-c8d7a002f033"
+            }
+          },
+          {
+            "frame": 0.6363636363636364,
+            "value": {
+              "__uuid__": "c9ab1268-8b9e-4029-b146-8ce2e20ef541"
+            }
+          },
+          {
+            "frame": 0.7272727272727273,
+            "value": {
+              "__uuid__": "7508a908-b8e5-4b7e-8a6a-95f64d43937b"
+            }
+          },
+          {
+            "frame": 0.8181818181818182,
+            "value": {
+              "__uuid__": "c8fa82ab-9af8-4c64-8ca4-abf7c9eae8c8"
+            }
+          },
+          {
+            "frame": 0.9090909090909091,
+            "value": {
+              "__uuid__": "a321b98e-2bd4-4c13-9200-ba326eaca35c"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "bba5606b-c00a-4e5d-b0bb-f9ad6abc94bf"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

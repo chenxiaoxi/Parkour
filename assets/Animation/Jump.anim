@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Jump",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 5,
+  "speed": 2,
+  "wrapMode": "1",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "703d396d-5a4c-48b2-bcb1-b37da49c95b8"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "85a61412-8eba-4d3d-959d-23ddbaf3e928"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "e7245e75-0375-417a-b115-9f643f93774e"
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__uuid__": "177626f1-3674-4de2-a9b7-75e7e4466800"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "b2f5bfdb-ace5-4abb-9efe-81d49e195f53"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
