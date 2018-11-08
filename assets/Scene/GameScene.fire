@@ -412,8 +412,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -63.3,
-      "y": -48.5,
+      "x": -63,
+      "y": -50,
       "z": 0
     },
     "_scale": {
@@ -1032,6 +1032,9 @@
     "_enabled": true,
     "m_Hero": {
       "__id__": 10
+    },
+    "m_BtRoll": {
+      "__id__": 15
     },
     "_id": "86ifRltwpFMp0pHyjPUom1"
   },

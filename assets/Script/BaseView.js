@@ -11,21 +11,85 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        m_Hero:cc.Animation
+        m_Hero:cc.Animation,
+        m_BtRoll:cc.Button
     },
 
     // LIFE-CYCLE CALLBACKS:
 
      // 第一次进入游戏，控件创建产生后会调用的函数
     onLoad () {
-      
+        this.myHeroPlay('Run');
+        this.m_BtRoll.node.on(cc.Node.EventType.TOUCH_START,this.touchStart,this);
+        this.m_BtRoll.node.on(cc.Node.EventType.TOUCH_END,this.touchEnd,this)
+        this.m_BtRoll.node.on(cc.Node.EventType.TOUCH_CANCEL,this.touchEnd,this)
     },
-   
-    onAnimationChang(target,data){
-        cc.log('onAnimationChang:'+data)
-        this.m_Hero.play(data)
-    }
+    // 按下滑铲时，播放动画Roll
+    touchStart(){
+        cc.log()
+        if(this.m_Hero.currentClip.name == 'Jump'){
+            return;
+        }
+        this.myHeroPlay('Roll')
+    },
+     // 松开滑铲时，播放动画Run
+    touchEnd(){
+        if(this.m_Hero.currentClip.name == 'Jump'){
+            return;
+        }
+        this.myHeroPlay('Run')
+    },
 
+    // 人物跳起落地后的回调
+   callBackDownOver(){
+    this.myHeroPlay('Run')
+   },
+//    人物调用的总执行函数
+   myHeroPlay(playName){
+    if(this.isChangeClip(playName) == false){
+        return;
+    }
+    if(playName == 'Roll'){
+        this.m_Hero.node.setPosition(cc.v2(-63,-57.5))
+    }else if (playName == 'Run'){
+        this.m_Hero.node.setPosition(cc.v2(-63,-50))
+    }
+    this.m_Hero.play(playName)
+   },
+
+//    人物跳起后的位移帧
+    onAnimationChang(target,data){
+        if(data == 'Jump' && this.isChangeClip('Jump')){
+            var moveUp = cc.moveTo(0.5,-63,-10).easing(cc.easeCubicActionOut());
+            var moveDown = cc.moveTo(0.5,-63,-50).easing(cc.easeCubicActionIn());
+            var callBakcFun = cc.callFunc(this.callBackDownOver,this);
+            var sqe = cc.sequence(moveUp,moveDown,callBakcFun);
+            this.m_Hero.node.runAction(sqe);
+        }
+        this.myHeroPlay(data);
+    },
+
+    // 解决2个动作同时执行bug
+    isChangeClip (playName){
+        // 判断滑铲
+        if(playName == 'Roll'){
+            // 如果是跳跃，返回false
+            if(this.m_Hero.currentClip.name =='Jump'){
+                return false
+            }else if(this.m_Hero.currentClip.name =='Run'){
+                return true                
+            }
+            // 判断跳跃
+        }else if(playName == 'Jump'){
+            // 如果是跑步，返回true
+            if(this.m_Hero.currentClip.name == 'Run'){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        return true;
+    }
     // start () {
     //     cc.log('hello,world')
     // },
