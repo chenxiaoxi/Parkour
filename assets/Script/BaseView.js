@@ -12,7 +12,11 @@ cc.Class({
 
     properties: {
         m_Hero:cc.Animation,
-        m_BtRoll:cc.Button
+        m_BtRoll:cc.Button,
+        m_Back1:[cc.Node],
+        m_Back2:[cc.Node],
+        m_Back3:[cc.Node],
+
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -21,8 +25,42 @@ cc.Class({
     onLoad () {
         this.myHeroPlay('Run');
         this.m_BtRoll.node.on(cc.Node.EventType.TOUCH_START,this.touchStart,this);
-        this.m_BtRoll.node.on(cc.Node.EventType.TOUCH_END,this.touchEnd,this)
-        this.m_BtRoll.node.on(cc.Node.EventType.TOUCH_CANCEL,this.touchEnd,this)
+        this.m_BtRoll.node.on(cc.Node.EventType.TOUCH_END,this.touchEnd,this);
+        this.m_BtRoll.node.on(cc.Node.EventType.TOUCH_CANCEL,this.touchEnd,this);
+       
+        // 第一层背景图移动
+        for (var index = 0; index<this.m_Back1.length; index++){
+            var BgWidth = this.m_Back1[index].width-3;
+            this.m_Back1[index].setPosition(index*BgWidth,0);
+            var move = cc.moveTo(index*BackMoveTime1+BackMoveTime1,cc.v2(-BgWidth,0));
+            var sqr = cc.sequence(move,cc.callFunc(this.BackMoveEnd,this,BackMoveTime1))
+            this.m_Back1[index].runAction(sqr);
+        }
+        // 第二层背景图移动
+        for(var i = 0;i<this.m_Back2.length;i++){
+        var bgWidth = this.m_Back2[i].width-3;
+        this.m_Back2[i].setPosition(i*bgWidth,0);
+        var move = cc.moveTo(i*BackMoveTime2+BackMoveTime2,cc.v2(-bgWidth,0));
+        var seq = cc.sequence(move,cc.callFunc(this.BackMoveEnd,this,BackMoveTime2));
+        this.m_Back2[i].runAction(seq)    
+    }
+        // 第三层背景图移动
+        for(var i = 0;i<this.m_Back3.length;i++){
+        var bgWidth = this.m_Back3[i].width-3;
+        this.m_Back3[i].setPosition(i*bgWidth,0);
+        var move = cc.moveTo(i*BackMoveTime3+BackMoveTime3,cc.v2(-bgWidth,0));
+        var seq = cc.sequence(move,cc.callFunc(this.BackMoveEnd,this,BackMoveTime3));
+        this.m_Back3[i].runAction(seq);
+    }
+    },
+    
+     // 第一背景图移动结束后的回调
+    BackMoveEnd (target,data) {
+        var BgWidth = target.width -3;
+        target.setPosition(BgWidth,0);
+        var move = cc.moveTo(data*2,cc.v2(-BgWidth,0));
+        var sqr = cc.sequence(move,cc.callFunc(this.BackMoveEnd,this,data))
+        target.runAction(sqr);
     },
     // 按下滑铲时，播放动画Roll
     touchStart(){

@@ -7,20 +7,33 @@
             <key>slice01_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{507,248}}</string>
+                <string>{{2,2},{507,199}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{507,248}}</string>
+                <string>{{0,0},{507,199}}</string>
                 <key>sourceSize</key>
-                <string>{507,248}</string>
+                <string>{507,199}</string>
+            </dict>
+            <key>slice01_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,270},{507,48}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{507,48}}</string>
+                <key>sourceSize</key>
+                <string>{507,48}</string>
             </dict>
             <key>slice02_02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,252},{507,65}}</string>
+                <string>{{2,203},{507,65}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -33,7 +46,7 @@
             <key>slice03_03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,319},{304,180}}</string>
+                <string>{{2,320},{304,180}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +59,7 @@
             <key>slice04_04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{308,319},{192,105}}</string>
+                <string>{{308,320},{192,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +72,7 @@
             <key>slice05_05.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{308,426},{51,27}}</string>
+                <string>{{308,427},{51,27}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -72,7 +85,7 @@
             <key>slice06_06.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,501},{131,9}}</string>
+                <string>{{308,480},{131,9}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,7 +98,7 @@
             <key>slice07_07.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{135,501},{124,9}}</string>
+                <string>{{308,491},{124,9}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -105,7 +118,7 @@
             <key>size</key>
             <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:efa387e31f378c2a6f65f1f14475ab6d$</string>
+            <string>$TexturePacker:SmartUpdate:fd76263c0b0fe4600534a2598dc0467a$</string>
             <key>textureFileName</key>
             <string>BG1.png</string>
         </dict>
