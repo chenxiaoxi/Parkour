@@ -7,7 +7,7 @@
             <key>slice01_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{156,154}}</string>
+                <string>{{350,2},{156,154}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +20,7 @@
             <key>slice02_02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,158},{150,155}}</string>
+                <string>{{350,158},{150,155}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -30,23 +30,62 @@
                 <key>sourceSize</key>
                 <string>{150,155}</string>
             </dict>
-            <key>slice23_23.png</key>
+            <key>slice11_11.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{160,2},{83,97}}</string>
+                <string>{{2,445},{232,63}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
+                <string>{{0,0},{232,63}}</string>
+                <key>sourceSize</key>
+                <string>{232,63}</string>
+            </dict>
+            <key>slice22_22.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,206},{346,98}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{346,98}}</string>
+                <key>sourceSize</key>
+                <string>{346,98}</string>
+            </dict>
+            <key>slice23_23.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{236,306},{83,97}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
                 <string>{{0,0},{83,97}}</string>
                 <key>sourceSize</key>
                 <string>{83,97}</string>
             </dict>
+            <key>slice27_27.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,104},{346,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{346,100}}</string>
+                <key>sourceSize</key>
+                <string>{346,100}</string>
+            </dict>
             <key>slice34_34.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{160,101},{133,80}}</string>
+                <string>{{2,310},{133,80}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -56,6 +95,19 @@
                 <key>sourceSize</key>
                 <string>{133,80}</string>
             </dict>
+            <key>slice49_49.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{346,100}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{346,100}}</string>
+                <key>sourceSize</key>
+                <string>{346,100}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -64,9 +116,9 @@
             <key>realTextureFileName</key>
             <string>GameUi.png</string>
             <key>size</key>
-            <string>{256,512}</string>
+            <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:a4bcfaee417346e8d5ae6d4d150710e7$</string>
+            <string>$TexturePacker:SmartUpdate:33b75e128fa90270b02e91ca62bbab19$</string>
             <key>textureFileName</key>
             <string>GameUi.png</string>
         </dict>
